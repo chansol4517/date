@@ -46,3 +46,10 @@ console.log(now.getMinutes());
 
 //초
 console.log(now.getSeconds());
+
+//우리나라 시간대를 전세계 표준시로 변환해서 반환
+// const gmtNow = now.toGMTString();
+//반환값은 똑같지만 구조만 바뀜
+const gmtNow = now.toUTCString();
+
+console.log(gmtNow);
